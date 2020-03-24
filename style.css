@@ -2,8 +2,11 @@
     background-image: url(img/photo.png);
     width: 1920px;
     height: 1024px;
-    position: relative;
 }
-.header{
+header{
     position: relative;
+    top: 70px;
+}
+body{
+    margin: 0;
 }
