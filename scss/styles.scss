@@ -1,0 +1,125 @@
+/* BASE */
+@import "./base/reset";
+
+/* HELPER */
+@import "./helpers/variables";
+
+/* LAYOUT */
+@import "./layout/header";
+
+/* 
+.baner{
+    background-image: url(img/photo.png);
+    width: 1920px;
+    height: 1024px;
+}
+.baner{
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 219px;
+    margin-left: 200px;
+}
+.name{
+    width: 115px;
+    height: 26px;
+    color: $primaryColor;
+    font-family: Raleway;
+    font-size: 34px;
+    font-weight: 400;
+}
+.navigation-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    list-style: none;
+}
+.menu a{
+    width: 42px;
+    height: 10px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.menu a:hover{
+    width: 64px;
+    height: 11px;
+    color: #c7b299;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+}
+.search{
+    margin-left: 35px;
+}
+.search a{
+    margin-left: 28px;
+}
+.baner-box{
+    position: absolute;
+    top: 381px;
+    left: 666px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.baner-box h2{
+    width: 456px;
+    height: 34px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+}
+.baner-box h1{
+    width: 589px;
+    height: 50px;
+    margin: 0;
+    font-family: "Raleway - Extra Bold";
+    font-size: 52px;
+    font-weight: 400;
+    color: #ffffff;
+    
+}
+.baner-box h3{ 
+    width: 562px;
+    height: 39px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 15px;
+}
+.buttonstyl{
+    width: 94px;
+    height: 11px;
+    color: #ffffff;
+    font-family: "Raleway - Extra Bold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 610px;
+    left: 913px;
+    z-index: 2;
+}
+
+.buttonimg{
+    position: absolute;
+    top: 595px;
+    left: 876px;
+}
+*/
