@@ -180,6 +180,16 @@ table {
 }
 
 /* HELPER */
+/* COMPONENTS */
+.big-button {
+  min-width: 170px;
+  height: 53px;
+  background-color: #998675;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #ffffff;
+}
+
 /* LAYOUT */
 header {
   position: absolute;
