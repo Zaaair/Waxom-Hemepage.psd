@@ -1,0 +1,20 @@
+.banner {
+    background-image: url(../img/banner.png); /*картинка*/
+    background-repeat: no-repeat; /* повторение*/
+    background-position: center center; /*позиция картинки*/
+    background-size: cover; /* заполонение картинки*/
+    min-height: 1024px;  
+    width: 100%;
+    position: relative;
+    z-index: 0; /* слой оси z */
+    &::before { /* добовляем темную шторку */
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%; /* ростягиваем на весь размер баннера */
+        height: 100%; /* ростягиваем на весь размер баннера */
+        background-color: rgba(17, 17, 17, 0.7); /* цвет шторки с прозрачностью*/
+        z-index: -1; /* позиция шторки по отношению к банеру*/
+    }
+}

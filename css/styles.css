@@ -1,3 +1,10 @@
+@charset "UTF-8";
+/* HELPER */
+.nav-link {
+  transition: all 0.5s ease-in;
+  /* анимация ховера*/
+}
+
 /* BASE */
 html {
   box-sizing: border-box;
@@ -179,7 +186,17 @@ table {
   border-collapse: collapse;
 }
 
-/* HELPER */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
 /* COMPONENTS */
 .big-button {
   min-width: 170px;
@@ -190,129 +207,68 @@ table {
   color: #ffffff;
 }
 
-/* LAYOUT */
-header {
-  position: absolute;
-  margin-top: 40px;
+.logo-img {
+  width: 64px;
   height: 56px;
+  background-color: #ffffff;
+}
+
+.logo-text {
+  width: 115px;
+  height: 26px;
+  font-family: Raleway;
+  font-size: 34px;
+  background-color: #ffffff;
+}
+
+.nav-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/* 
-.baner{
-    background-image: url(img/photo.png);
-    width: 1920px;
-    height: 1024px;
-}
-.baner{
-    position: relative;
+.nav-item {
+  margin: 0 5px;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 219px;
-    margin-left: 200px;
+.nav-link {
+  /* сылке делаем ховер*/
+  color: #fff;
+  padding: 0 10px;
+  /* расширяем кликабельность сылки*/
+  /* расширяю класс тихим классом в (плейсхолдере)*/
 }
-.name{
-    width: 115px;
-    height: 26px;
-    color: $primaryColor;
-    font-family: Raleway;
-    font-size: 34px;
-    font-weight: 400;
-}
-.navigation-li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu{
-    list-style: none;
-}
-.menu a{
-    width: 42px;
-    height: 10px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-    padding-left: 30px;
-    text-decoration: none;
-}
-.menu a:hover{
-    width: 64px;
-    height: 11px;
-    color: #c7b299;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-}
-.search{
-    margin-left: 35px;
-}
-.search a{
-    margin-left: 28px;
-}
-.baner-box{
-    position: absolute;
-    top: 381px;
-    left: 666px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.baner-box h2{
-    width: 456px;
-    height: 34px;
-    color: #ffffff;
-    font-family: Raleway;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
-}
-.baner-box h1{
-    width: 589px;
-    height: 50px;
-    margin: 0;
-    font-family: "Raleway - Extra Bold";
-    font-size: 52px;
-    font-weight: 400;
-    color: #ffffff;
-
-}
-.baner-box h3{ 
-    width: 562px;
-    height: 39px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-top: 15px;
-}
-.buttonstyl{
-    width: 94px;
-    height: 11px;
-    color: #ffffff;
-    font-family: "Raleway - Extra Bold";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 610px;
-    left: 913px;
-    z-index: 2;
+.nav-item:hover .nav-link {
+  /* наследуем состояние радителя*/
+  color: #c7b299;
 }
 
-.buttonimg{
-    position: absolute;
-    top: 595px;
-    left: 876px;
+/* LAYOUT */
+.banner {
+  background-image: url(../img/banner.png);
+  /*картинка*/
+  background-repeat: no-repeat;
+  /* повторение*/
+  background-position: center center;
+  /*позиция картинки*/
+  background-size: cover;
+  /* заполонение картинки*/
+  min-height: 1024px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  /* слой оси z */
 }
-*/
+.banner::before {
+  /* добовляем темную шторку */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* ростягиваем на весь размер баннера */
+  height: 100%;
+  /* ростягиваем на весь размер баннера */
+  background-color: rgba(17, 17, 17, 0.7);
+  /* цвет шторки с прозрачностью*/
+  z-index: -1;
+  /* позиция шторки по отношению к банеру*/
+}
