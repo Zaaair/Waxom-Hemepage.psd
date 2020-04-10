@@ -1,6 +1,11 @@
 .header {
-    
+    padding: 40px 0; /* отступ блока с хедером с верху и низу*/
 }
 .header-content{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heder-terminal{
+    display: flex;
 }

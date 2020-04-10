@@ -1,16 +1,17 @@
 .logo{
+    display: flex;
+    align-items: center;
 
 }
 .logo-img{
-    width: 64px;
+    width: 64px; /* огроничил размером картинку */
     height: 56px;
-    background-color: $mainTextColor;
+    color: $mainTextColor;
+    object-fit: contain;
 
 }
 .logo-text{
-    width: 115px;
-    height: 26px;
-    font-family: Raleway;
+   
     font-size: 34px;
-    background-color: $mainTextColor;
+    color: $mainTextColor;
 }

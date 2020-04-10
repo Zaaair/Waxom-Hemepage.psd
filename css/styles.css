@@ -127,7 +127,7 @@ a:active {
 }
 
 ul {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   list-style: none;
 }
 
@@ -191,7 +191,8 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  /* делает так что все элементы в нем распологаються ровно по середине */
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px 0 15px;
@@ -207,18 +208,26 @@ body {
   color: #ffffff;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
   width: 64px;
+  /* огроничил размером картинку */
   height: 56px;
-  background-color: #ffffff;
+  color: #ffffff;
+  object-fit: contain;
 }
 
 .logo-text {
-  width: 115px;
-  height: 26px;
-  font-family: Raleway;
   font-size: 34px;
-  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.nav {
+  margin-right: 50px;
 }
 
 .nav-list {
@@ -242,6 +251,21 @@ body {
 }
 
 /* LAYOUT */
+.header {
+  padding: 40px 0;
+  /* отступ блока с хедером с верху и низу*/
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heder-terminal {
+  display: flex;
+}
+
 .banner {
   background-image: url(../img/banner.png);
   /*картинка*/
@@ -262,7 +286,9 @@ body {
   content: "";
   position: absolute;
   left: 0;
+  /*точка в которой появится шторка*/
   top: 0;
+  /*точка в которой появится шторка*/
   width: 100%;
   /* ростягиваем на весь размер баннера */
   height: 100%;
