@@ -1,21 +1,60 @@
-// h1-h3
-// span
-// p
 
-
+ // color, font-size., font-family, line-height, margin-bottom
 .heading-main {
-    // color, font-size., font-family, line-height, margin-bottom
+    color: $mainTextColor;
+    font-size: 52px;
+    font-family: $mainFont;
 }
 
 .heading-2 {
-
+    color: $mainTextColor;
+    font-size: 36px;
+    font-family: $mainFont;
 }
 
 .title {
-
+    color: $markerColor;
+    font-size: $headingText;
+    font-family: $mainFont;
 }
 
+.title-secondary {
+    color: $markerColor;
+    font-size: $offerText;
+    font-family: $mainFont;
+    font-weight: 600;
+    margin: 0 0 19px;
+    display: block;
+}
 
-.subtitle {}
+.paragraph {
+    color: $primaryColor;
+    font-size: $sectionText;
+    font-family: $secondaryFont;
+    line-height: 1.5;
+    .offers-box & {
+       font-size: $smallHoverText;
+       color: $smallTextColor;
+    }
 
-.paragraph {}
+    // .offers-box:hover & {
+    //     font-size: $smallHoverText;
+    //     color: $smallTextColor;
+    //  }
+   
+}
+
+.paragraph-next {
+    color: $smallTextColor;
+    font-size: $sectionText;
+    font-family: $secondaryFont;
+    line-height: 1.75;
+}
+
+.paragraph-hover {
+    color: $smallTextColor;
+    font-size: $smallHoverText;
+    font-family: $secondaryFont;
+    line-height: 1.71;
+}
+

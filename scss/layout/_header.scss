@@ -1,5 +1,9 @@
 .header {
     padding: 40px 0; /* отступ блока с хедером с верху и низу*/
+    position: absolute; /* выбиваем из потока банера*/
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 .header-content{
     display: flex;

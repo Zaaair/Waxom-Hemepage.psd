@@ -1,9 +1,18 @@
-.big-button{
+.button{
     min-width: 170px;
     height: 53px;
     background-color: $bigButton;
     padding-left: 5px;
     padding-right: 5px;
     color: $mainTextColor;
+    border-radius: 5px;
+    box-shadow: inset 0px -3px 0 0 #736357;
+    transition: all 1s ease-in;
+    opacity: 1;
+    &:hover{
+      box-shadow: inset 0 0 0 0 #736357;
+      opacity: 0.8;
+    }
 
   }
+  
