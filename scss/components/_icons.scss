@@ -1,19 +1,33 @@
 .pen-icon{
-    display: block;
-    height: 49px;
+    display: block; /* делаем <i> блоком */
+    height: 49px; /* фиксируем велечину картинки*/
     width: 49px;
-    background-image: url(../img/icon-1.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin: 0 auto;
-    margin-bottom: 29px;
-    // .offers-box:hover & {
-    //     background-image: url(../img/icon-1hover.svg);
-    // }
-}
+    background-image: url(../img/icon-1.svg); /* путь к картинке*/
+    background-repeat: no-repeat; /* свойвства которые обязательно для картинки*/
+    background-position: center center; /* свойвства которые обязательно для картинки*/
+    background-size: cover; /* свойвства которые обязательно для картинки*/
+    margin: 0 auto; /* выравниваеим картинку по центру */ 
+    margin-bottom: 29px; /* отодвигаем блок от ниже стоящего*/
+       .offers-box:hover & {  /* есле родитель картинки ховер, тогда */
+            background-image: url(../img/icon-1hover.svg); /* картинка меняется на другую*/
+   }
+}                 /* ховер не применился к второй картинке*/
+                  /* и не получилось на второй класс повесить ховер */
 
-// .class {
-//     @extend .pen-icon;
-//     background-image: url(kdfhgkdjfhgkdfjg);
-// }
+.pen-icon2 { /*картинка второго блока*/
+    @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+        background-image: url(../img/icon-2.svg); /* картинку меняем на нужную*/
+
+ }
+
+ .pen-icon3 { /*картинка третего блока*/
+    @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+        background-image: url(../img/icon-3.svg); /* картинку меняем на нужную*/
+
+ }
+ 
+ .pen-icon4 { /*картинка четвертого блока*/
+    @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+        background-image: url(../img/icon-4.svg); /* картинку меняем на нужную*/
+
+ }

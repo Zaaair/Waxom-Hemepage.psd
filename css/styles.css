@@ -253,15 +253,24 @@ body {
 /* COMPONENTS */
 .button {
   min-width: 170px;
+  /*мин ширина для того ( есле текст в нутри станет больше чтоб не увеличило кнопку*/
   height: 53px;
+  /* высота кнопки*/
   background-color: #998675;
+  /* цвет*/
   padding-left: 5px;
+  /* отступы в нутри блока чтоб не налазил текст при сжатии*/
   padding-right: 5px;
   color: #ffffff;
+  /* цвет текста*/
   border-radius: 5px;
+  /* округление углов рамки*/
   box-shadow: inset 0px -3px 0 0 #736357;
+  /* тень*/
   transition: all 1s ease-in;
+  /* нажатие кнопки*/
   opacity: 1;
+  /* прозрачность ( для того чтоб сработало прозрачность на ховере)*/
 }
 .button:hover {
   box-shadow: inset 0 0 0 0 #736357;
@@ -314,16 +323,52 @@ body {
   margin-left: 28px;
 }
 
-.pen-icon {
+.pen-icon, .pen-icon4, .pen-icon3, .pen-icon2 {
   display: block;
+  /* делаем <i> блоком */
   height: 49px;
+  /* фиксируем велечину картинки*/
   width: 49px;
   background-image: url(../img/icon-1.svg);
+  /* путь к картинке*/
   background-repeat: no-repeat;
+  /* свойвства которые обязательно для картинки*/
   background-position: center center;
+  /* свойвства которые обязательно для картинки*/
   background-size: cover;
+  /* свойвства которые обязательно для картинки*/
   margin: 0 auto;
+  /* выравниваеим картинку по центру */
   margin-bottom: 29px;
+  /* отодвигаем блок от ниже стоящего*/
+}
+.offers-box:hover .pen-icon, .offers-box:hover .pen-icon4, .offers-box:hover .pen-icon3, .offers-box:hover .pen-icon2 {
+  /* есле родитель картинки ховер, тогда */
+  background-image: url(../img/icon-1hover.svg);
+  /* картинка меняется на другую*/
+}
+
+/* ховер не применился к второй картинке*/
+/* и не получилось на второй класс повесить ховер */
+.pen-icon2 {
+  /*картинка второго блока*/
+  /* применяем все стили класса pen-icon к этому классу*/
+  background-image: url(../img/icon-2.svg);
+  /* картинку меняем на нужную*/
+}
+
+.pen-icon3 {
+  /*картинка третего блока*/
+  /* применяем все стили класса pen-icon к этому классу*/
+  background-image: url(../img/icon-3.svg);
+  /* картинку меняем на нужную*/
+}
+
+.pen-icon4 {
+  /*картинка четвертого блока*/
+  /* применяем все стили класса pen-icon к этому классу*/
+  background-image: url(../img/icon-4.svg);
+  /* картинку меняем на нужную*/
 }
 
 /* LAYOUT */
@@ -385,6 +430,7 @@ body {
   /* позиция шторки по отношению к банеру*/
 }
 
+/* содержимое класса banner-content выравнивается во центру блока*/
 .banner-content {
   max-width: 620px;
   width: 100%;
@@ -397,21 +443,40 @@ body {
   padding: 80px 0;
 }
 
+.offers-content {
+  display: flex;
+  /* выстраиваем содержимое в ряд*/
+}
+
 .offers-box {
   position: relative;
+  /* фексируем блок чтобы можно было подвинуть бефор*/
   max-width: 252px;
+  /* ширина блока с контентом*/
   padding: 0 15px;
+  /* отступ по бокам */
   padding-bottom: 30px;
+  /* отсту с низу*/
   width: 100%;
   text-align: center;
+  /* распологаем содержимое по центру*/
 }
 .offers-box::before {
+  /* рисуем полосочку в низу блока*/
   content: "";
+  /* обязательное свойвство для всех бефор и автор*/
   width: 70px;
+  /* длинна палочки*/
   height: 3px;
+  /* толчина палочки*/
   background-color: #f1eee9;
+  /* цвет палочки*/
   position: absolute;
+  /* для перемещенич бефора*/
   top: 100%;
+  /* опускаем в низ*/
   left: 50%;
+  /* выстовляем по центру блока*/
   transform: translateX(-50%);
+  /* выстовляем по центру блока*/
 }

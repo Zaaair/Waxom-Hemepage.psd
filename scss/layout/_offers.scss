@@ -2,25 +2,26 @@
     padding: 80px 0;
 }
 .offers-content{
+    display: flex; /* выстраиваем содержимое в ряд*/
 
 
 }
 .offers-box{
-    position: relative;
-    max-width: 252px;
-    padding: 0 15px;
-    padding-bottom: 30px;
-    width: 100%;
-    text-align: center;
-    &::before {
-        content: "";
-        width: 70px;
-        height: 3px;
-        background-color: #f1eee9;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+    position: relative; /* фексируем блок чтобы можно было подвинуть бефор*/
+    max-width: 252px; /* ширина блока с контентом*/
+    padding: 0 15px; /* отступ по бокам */
+    padding-bottom: 30px; /* отсту с низу*/
+    width: 100%; 
+    text-align: center; /* распологаем содержимое по центру*/
+    &::before {   /* рисуем полосочку в низу блока*/
+        content: ""; /* обязательное свойвство для всех бефор и автор*/
+        width: 70px; /* длинна палочки*/
+        height: 3px; /* толчина палочки*/
+        background-color: #f1eee9;  /* цвет палочки*/
+        position: absolute; /* для перемещенич бефора*/
+        top: 100%;   /* опускаем в низ*/
+        left: 50%;   /* выстовляем по центру блока*/
+        transform: translateX(-50%); /* выстовляем по центру блока*/
     
 
     }
