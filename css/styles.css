@@ -212,8 +212,12 @@ body {
 
 .title {
   color: #555555;
-  font-size: 30;
+  font-size: 30px;
   font-family: "Raleway", sans-serif;
+}
+.theme-info-text .title {
+  font-size: 28px;
+  color: #fff;
 }
 
 .title-secondary {
@@ -223,6 +227,9 @@ body {
   font-weight: 600;
   margin: 0 0 19px;
   display: block;
+}
+.offers-box:hover .title-secondary {
+  color: #c7b299;
 }
 
 .paragraph {
@@ -235,19 +242,29 @@ body {
   font-size: 14px;
   color: #8c8c8c;
 }
-
-.paragraph-next {
-  color: #8c8c8c;
+.offers-box:hover .paragraph {
+  color: #c7b299;
+}
+.realization-content .paragraph {
   font-size: 16px;
+  color: #8c8c8c;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.theme-info-text .paragraph {
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
+  color: #615855;
+}
+.advertising-text .paragraph {
+  color: #8c8c8c;
   line-height: 1.75;
+  max-width: 757px;
+  margin: 0 auto;
 }
 
-.paragraph-hover {
-  color: #8c8c8c;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.71;
+.highlight {
+  color: #c7b299;
 }
 
 /* COMPONENTS */
@@ -271,10 +288,22 @@ body {
   /* нажатие кнопки*/
   opacity: 1;
   /* прозрачность ( для того чтоб сработало прозрачность на ховере)*/
+  display: inline-block;
+  /* насильно делаем кнопку инлайн блоком*/
+  line-height: 53px;
+  /* высота линии текста( дубль высоты кнопки)*/
+  text-transform: uppercase;
+  /* текст в нутри БОЛЬШИМИ БУКВАМИ*/
+  text-align: center;
+  /* текст всегда по центру */
 }
 .button:hover {
   box-shadow: inset 0 0 0 0 #736357;
   opacity: 0.8;
+  /* прозрачность при ховере*/
+}
+.advertising-content .button {
+  margin-bottom: 80px;
 }
 
 .logo {
@@ -302,9 +331,24 @@ body {
 .nav-list {
   display: flex;
 }
+.advertising-nav .nav-list {
+  justify-content: center;
+  padding-top: 40px;
+}
 
 .nav-item {
   margin: 0 5px;
+}
+.advertising-nav .nav-item {
+  display: inline-block;
+  border: solid 1px #ebebeb;
+  border-radius: 3px;
+  width: 120px;
+  height: 32px;
+  text-align: center;
+}
+.advertising-nav .nav-item:hover {
+  background-color: #998675;
 }
 
 .nav-link {
@@ -314,9 +358,16 @@ body {
   /* расширяем кликабельность сылки*/
   /* расширяю класс тихим классом в (плейсхолдере)*/
 }
+.advertising-nav .nav-link {
+  color: #8c8c8c;
+  font-size: 14px;
+}
 .nav-item:hover .nav-link {
   /* наследуем состояние радителя*/
   color: #c7b299;
+}
+.advertising-nav .nav-link:hover {
+  color: #fff;
 }
 
 .search-img {
@@ -356,6 +407,11 @@ body {
   background-image: url(../img/icon-2.svg);
   /* картинку меняем на нужную*/
 }
+.offers-box:hover .pen-icon2 {
+  /* есле родитель картинки ховер, тогда */
+  background-image: url(../img/icon-2hover.svg);
+  /* картинка меняется на другую*/
+}
 
 .pen-icon3 {
   /*картинка третего блока*/
@@ -363,12 +419,46 @@ body {
   background-image: url(../img/icon-3.svg);
   /* картинку меняем на нужную*/
 }
+.offers-box:hover .pen-icon3 {
+  /* есле родитель картинки ховер, тогда */
+  background-image: url(../img/icon-3hover.svg);
+  /* картинка меняется на другую*/
+}
 
 .pen-icon4 {
   /*картинка четвертого блока*/
   /* применяем все стили класса pen-icon к этому классу*/
   background-image: url(../img/icon-4.svg);
   /* картинку меняем на нужную*/
+}
+.offers-box:hover .pen-icon4 {
+  /* есле родитель картинки ховер, тогда */
+  background-image: url(../img/icon-4hover.svg);
+  /* картинка меняется на другую*/
+}
+
+.media {
+  width: 100%;
+  height: 0;
+  padding-bottom: 39%;
+  /* вычесляется по формуле место для картинки*/
+  position: relative;
+}
+.projects .media {
+  padding-bottom: 64%;
+  min-width: 370px;
+}
+
+.media-content {
+  position: absolute;
+  top: 0px;
+  /* растягиваем от края до края картинку*/
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 /* LAYOUT */
@@ -446,6 +536,7 @@ body {
 .offers-content {
   display: flex;
   /* выстраиваем содержимое в ряд*/
+  justify-content: space-between;
 }
 
 .offers-box {
@@ -479,4 +570,76 @@ body {
   /* выстовляем по центру блока*/
   transform: translateX(-50%);
   /* выстовляем по центру блока*/
+}
+.offers-box:hover::before {
+  background-color: #c7b299;
+}
+
+.realization {
+  padding-top: 83px;
+  background-color: #fbfaf8;
+}
+
+.realization-content {
+  text-align: center;
+}
+
+.theme-info {
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding: 50px 0;
+}
+
+.theme-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advertising {
+  margin-top: 81px;
+}
+
+.advertising-content {
+  text-align: center;
+}
+
+.advertising-nav {
+  padding-bottom: 51px;
+}
+
+.advertising-text {
+  max-width: 757px;
+  margin: 0 auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.projects-sections {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.kart {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfaf8;
+  margin-bottom: 30px;
+}
+
+.kart-title {
+  font-size: 20px;
+  color: #c7b299;
+}
+
+.kart-paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #d1d1d1;
 }

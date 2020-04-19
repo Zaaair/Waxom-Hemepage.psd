@@ -1,24 +1,48 @@
 .nav{
     margin-right: 50px;
-
 }
+
 .nav-list{
     display: flex;
+    .advertising-nav & {
+        justify-content: center;
+        padding-top: 40px;
+    }
 }
+
 .nav-item{
     margin: 0 5px;
-   
+    .advertising-nav & {
+        display: inline-block;
+        border: solid 1px #ebebeb;
+        border-radius: $border-radius;
+        width: 120px;
+        height: 32px;
+        text-align: center;
+    }
+    .advertising-nav &:hover{
+        background-color: $bigButton;
+    }
 }
+
 .nav-link{  /* сылке делаем ховер*/
     color: $primaryColor;
     padding: 0 10px; /* расширяем кликабельность сылки*/
     @extend %transition; /* расширяю класс тихим классом в (плейсхолдере)*/
+    .advertising-nav & {
+        color: $smallTextColor;
+        font-size: $smallHoverText;
+    } 
     .nav-item:hover & { /* наследуем состояние радителя*/
         color: $hoverColor;
     }
+    .advertising-nav &:hover{
+        color: $primaryColor;
+    }
+}
 
     
-}
+
 .search-img {
     margin-left: 28px;
 }

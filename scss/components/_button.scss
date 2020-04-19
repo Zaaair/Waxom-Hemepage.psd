@@ -1,18 +1,23 @@
-.button{
-    min-width: 170px; /*мин ширина для того ( есле текст в нутри станет больше чтоб не увеличило кнопку*/
-    height: 53px; /* высота кнопки*/
-    background-color: $bigButton; /* цвет*/
-    padding-left: 5px; /* отступы в нутри блока чтоб не налазил текст при сжатии*/
-    padding-right: 5px;
-    color: $mainTextColor; /* цвет текста*/
-    border-radius: 5px; /* округление углов рамки*/
-    box-shadow: inset 0px -3px 0 0 #736357; /* тень*/
-    transition: all 1s ease-in; /* нажатие кнопки*/
-    opacity: 1; /* прозрачность ( для того чтоб сработало прозрачность на ховере)*/
-    &:hover{
-      box-shadow: inset 0 0 0 0 #736357; 
-      opacity: 0.8;
-    }
-
+.button {
+  min-width: 170px; /*мин ширина для того ( есле текст в нутри станет больше чтоб не увеличило кнопку*/
+  height: 53px; /* высота кнопки*/
+  background-color: $bigButton; /* цвет*/
+  padding-left: 5px; /* отступы в нутри блока чтоб не налазил текст при сжатии*/
+  padding-right: 5px;
+  color: $mainTextColor; /* цвет текста*/
+  border-radius: 5px; /* округление углов рамки*/
+  box-shadow: inset 0px -3px 0 0 #736357; /* тень*/
+  transition: all 1s ease-in; /* нажатие кнопки*/
+  opacity: 1; /* прозрачность ( для того чтоб сработало прозрачность на ховере)*/
+  display: inline-block; /* насильно делаем кнопку инлайн блоком*/
+  line-height: 53px; /* высота линии текста( дубль высоты кнопки)*/
+  text-transform: uppercase; /* текст в нутри БОЛЬШИМИ БУКВАМИ*/
+  text-align: center; /* текст всегда по центру */
+  &:hover {
+    box-shadow: inset 0 0 0 0 #736357;
+    opacity: 0.8; /* прозрачность при ховере*/
   }
-  
+  .advertising-content &{
+    margin-bottom: 80px;
+  }
+}

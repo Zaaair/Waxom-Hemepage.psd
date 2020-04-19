@@ -3,8 +3,7 @@
 }
 .offers-content{
     display: flex; /* выстраиваем содержимое в ряд*/
-
-
+    justify-content: space-between;
 }
 .offers-box{
     position: relative; /* фексируем блок чтобы можно было подвинуть бефор*/
@@ -22,13 +21,12 @@
         top: 100%;   /* опускаем в низ*/
         left: 50%;   /* выстовляем по центру блока*/
         transform: translateX(-50%); /* выстовляем по центру блока*/
-    
-
     }
-    // &:hover {
-    //     &::before {
-    //         background-color: #fff;
-    //     }
-    // }
-
+    &:hover {
+        &::before {
+            background-color: $hoverColor;
+        }
+    }
 }
+
+            

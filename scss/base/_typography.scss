@@ -1,5 +1,4 @@
-
- // color, font-size., font-family, line-height, margin-bottom
+// color, font-size., font-family, line-height, margin-bottom
 .heading-main {
     color: $mainTextColor;
     font-size: 52px;
@@ -16,6 +15,10 @@
     color: $markerColor;
     font-size: $headingText;
     font-family: $mainFont;
+    .theme-info-text & {
+        font-size: 28px;
+        color: $primaryColor;
+    }
 }
 
 .title-secondary {
@@ -25,6 +28,9 @@
     font-weight: 600;
     margin: 0 0 19px;
     display: block;
+    .offers-box:hover & {
+        color: $hoverColor;
+    }
 }
 
 .paragraph {
@@ -33,28 +39,32 @@
     font-family: $secondaryFont;
     line-height: 1.5;
     .offers-box & {
-       font-size: $smallHoverText;
-       color: $smallTextColor;
+        font-size: $smallHoverText;
+        color: $smallTextColor;
     }
-
-    // .offers-box:hover & {
-    //     font-size: $smallHoverText;
-    //     color: $smallTextColor;
-    //  }
-   
+    .offers-box:hover & {
+        color: $hoverColor;
+    }
+    .realization-content & {
+        font-size: $sectionText;
+        color: $smallTextColor;
+        max-width: 757px;
+        margin: 0 auto;
+    }
+    .theme-info-text & {
+        font-size: 18px;
+        font-family: $secondaryFont;
+        color: #615855;
+    }
+    .advertising-text & {
+        color: $smallTextColor;
+        line-height: 1.75;
+        max-width: 757px;
+        margin: 0 auto;
+    }
+    
 }
 
-.paragraph-next {
-    color: $smallTextColor;
-    font-size: $sectionText;
-    font-family: $secondaryFont;
-    line-height: 1.75;
+.highlight {
+    color: $hoverColor;
 }
-
-.paragraph-hover {
-    color: $smallTextColor;
-    font-size: $smallHoverText;
-    font-family: $secondaryFont;
-    line-height: 1.71;
-}
-

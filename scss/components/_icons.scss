@@ -17,17 +17,25 @@
 .pen-icon2 { /*картинка второго блока*/
     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
         background-image: url(../img/icon-2.svg); /* картинку меняем на нужную*/
-
+        .offers-box:hover & {  /* есле родитель картинки ховер, тогда */
+            background-image: url(../img/icon-2hover.svg); /* картинка меняется на другую*/
+        }
  }
 
  .pen-icon3 { /*картинка третего блока*/
     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
         background-image: url(../img/icon-3.svg); /* картинку меняем на нужную*/
+        .offers-box:hover & {  /* есле родитель картинки ховер, тогда */
+            background-image: url(../img/icon-3hover.svg); /* картинка меняется на другую*/
+        }
 
  }
  
  .pen-icon4 { /*картинка четвертого блока*/
     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
         background-image: url(../img/icon-4.svg); /* картинку меняем на нужную*/
+        .offers-box:hover & {  /* есле родитель картинки ховер, тогда */
+            background-image: url(../img/icon-4hover.svg); /* картинка меняется на другую*/
+        }
 
  }
