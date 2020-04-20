@@ -1,45 +1,13 @@
 .advertising{
-    margin-top: 81px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .advertising-content{
-    text-align: center;
-}
-.advertising-nav {
-    padding-bottom: 51px;
+    
+ 
 }
 .advertising-text{ 
     max-width: 757px;
     margin: 0 auto;
+    text-align: center;
 } 
-
-.projects{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-.projects-sections {
-    max-width: 370px;
-    display: flex;
-    flex-direction: column;
-}
-.kart{
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    background-color: #fbfaf8;
-    margin-bottom: 30px;
-    
-    
-}
-.kart-title{
-    font-size: $bigHoverText;
-    color: $hoverColor;
-
-}
-.kart-paragraph{
-    font-family: $secondaryFont;
-    font-size: $smallHoverText;
-    color: #d1d1d1;;
-
-}

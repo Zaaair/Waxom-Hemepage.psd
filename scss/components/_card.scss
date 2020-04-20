@@ -1,0 +1,49 @@
+.card {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    .card-descr:hover & {
+        background-color: #362f2d;
+    }
+}
+
+.card-descr {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fbfaf8;
+    margin-bottom: 30px;
+    padding: 13px 30px;
+    &::before{
+        content: "";
+        border: 20px solid transparent;
+        border-bottom: 20px solid #fbfaf8;
+        position: absolute;
+        top: -39px;
+        left: 14px;
+        z-index: 2;
+        .card:hover & {
+            border-bottom: 20px solid #362f2d; 
+        }
+    }
+    .card:hover & {
+        background-color: #362f2d;
+    }
+}
+.card-title {
+    font-size: $bigHoverText;
+    color: $hoverColor;
+    margin-bottom: 14px;
+    .card:hover & {
+        color: $primaryColor;
+    }
+}
+.card-info {
+    font-family: $secondaryFont;
+    font-size: $smallHoverText;
+    color: #d1d1d1;
+    .card:hover & {
+        color: $hoverColor;
+    }
+}

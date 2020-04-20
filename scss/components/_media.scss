@@ -7,6 +7,26 @@
         padding-bottom: 64%;
         min-width: 370px;
     }
+
+}
+// шторка на картинку карточки при наведении //
+.media { // что с ним произойдет //
+    .card:hover &::after { // есле проджект ховер тогда медиа афтер//
+        content: "";
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(17, 17, 17, 0.7);
+
+    }
+    &::after {
+        .card:hover & {
+
+        }
+    }
 }
 
 .media-content{
