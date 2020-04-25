@@ -27,6 +27,19 @@
             background-color: $hoverColor;
         }
     }
+    
+  
+}
+
+.offers-icon {
+    font-size: 49px;
+    color: $markerColor;
+    display: block;
+    margin-bottom: 29px;
+    .offers-box:hover &{
+        color: $hoverColor;
+    }
+    
 }
 
             

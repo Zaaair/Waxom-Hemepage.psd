@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* HELPER */
-.media-overlay, .loupe-icon, .link-icon, .nav-link {
+.header-controls-link, .media-overlay, .loupe-icon, .link-icon, .nav-link {
   transition: all 0.5s ease-in;
   /* анимация ховера*/
 }
@@ -340,6 +340,8 @@ body {
 
 .nav {
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
@@ -364,73 +366,6 @@ body {
 .nav-item:hover .nav-link {
   /* наследуем состояние радителя*/
   color: #c7b299;
-}
-
-.search-img {
-  margin-left: 28px;
-}
-
-.pen-icon, .pen-icon4, .pen-icon3, .pen-icon2 {
-  display: block;
-  /* делаем <i> блоком */
-  height: 49px;
-  /* фиксируем велечину картинки*/
-  width: 49px;
-  background-image: url(../img/icon-1.svg);
-  /* путь к картинке*/
-  background-repeat: no-repeat;
-  /* свойвства которые обязательно для картинки*/
-  background-position: center center;
-  /* свойвства которые обязательно для картинки*/
-  background-size: cover;
-  /* свойвства которые обязательно для картинки*/
-  margin: 0 auto;
-  /* выравниваеим картинку по центру */
-  margin-bottom: 29px;
-  /* отодвигаем блок от ниже стоящего*/
-}
-.offers-box:hover .pen-icon, .offers-box:hover .pen-icon4, .offers-box:hover .pen-icon3, .offers-box:hover .pen-icon2 {
-  /* есле родитель картинки ховер, тогда */
-  background-image: url(../img/icon-1hover.svg);
-  /* картинка меняется на другую*/
-}
-
-/* ховер не применился к второй картинке*/
-/* и не получилось на второй класс повесить ховер */
-.pen-icon2 {
-  /*картинка второго блока*/
-  /* применяем все стили класса pen-icon к этому классу*/
-  background-image: url(../img/icon-2.svg);
-  /* картинку меняем на нужную*/
-}
-.offers-box:hover .pen-icon2 {
-  /* есле родитель картинки ховер, тогда */
-  background-image: url(../img/icon-2hover.svg);
-  /* картинка меняется на другую*/
-}
-
-.pen-icon3 {
-  /*картинка третего блока*/
-  /* применяем все стили класса pen-icon к этому классу*/
-  background-image: url(../img/icon-3.svg);
-  /* картинку меняем на нужную*/
-}
-.offers-box:hover .pen-icon3 {
-  /* есле родитель картинки ховер, тогда */
-  background-image: url(../img/icon-3hover.svg);
-  /* картинка меняется на другую*/
-}
-
-.pen-icon4 {
-  /*картинка четвертого блока*/
-  /* применяем все стили класса pen-icon к этому классу*/
-  background-image: url(../img/icon-4.svg);
-  /* картинку меняем на нужную*/
-}
-.offers-box:hover .pen-icon4 {
-  /* есле родитель картинки ховер, тогда */
-  background-image: url(../img/icon-4hover.svg);
-  /* картинка меняется на другую*/
 }
 
 .arrow-right-icon {
@@ -620,8 +555,17 @@ body {
   align-items: center;
 }
 
-.heder-terminal {
+.header-terminal {
   display: flex;
+}
+
+.header-controls-link {
+  margin-left: 28px;
+  color: #fff;
+  font-size: 24px;
+}
+.header-controls-link:hover {
+  color: #c7b299;
 }
 
 .banner {
@@ -715,6 +659,16 @@ body {
 }
 .offers-box:hover::before {
   background-color: #c7b299;
+}
+
+.offers-icon {
+  font-size: 49px;
+  color: #555555;
+  display: block;
+  margin-bottom: 29px;
+}
+.offers-box:hover .offers-icon {
+  color: #c7b299;
 }
 
 .realization {
