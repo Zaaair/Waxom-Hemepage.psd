@@ -224,6 +224,11 @@ body {
   font-size: 28px;
   color: #fff;
 }
+.counter-compartment .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
 
 .title-secondary {
   color: #555555;
@@ -274,6 +279,15 @@ body {
 .mobile-option-section .paragraph {
   margin-left: 29px;
   line-height: 2;
+}
+.banner-content .paragraph {
+  padding-bottom: 52px;
+}
+.counter-compartment .paragraph {
+  font-family: "Montserrat", sans-serif;
+  color: #c7b299;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .highlight {
@@ -747,4 +761,30 @@ body {
 .mobile-option-section {
   display: flex;
   align-items: center;
+}
+
+.counter {
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding-bottom: 82px;
+}
+
+.counter-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  max-width: 928px;
+  margin: 0 auto;
+}
+
+.counter-compartment {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.counter-icon {
+  font-size: 45px;
+  color: #c7b299;
+  display: block;
+  margin-bottom: 30px;
 }

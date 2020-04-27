@@ -19,6 +19,11 @@
         font-size: 28px;
         color: $primaryColor;
     }
+    .counter-compartment & {
+        font-family: $secondaryFont;
+        font-size: 48px;
+        color: $primaryColor;
+    }
 }
 
 .title-secondary {
@@ -69,6 +74,16 @@
     .mobile-option-section & {
         margin-left: 29px;
         line-height: 2;
+    }
+    .banner-content & {
+        padding-bottom: 52px;
+    }
+    .counter-compartment & {
+        font-family: $secondaryFont;
+        color: $hoverColor;
+        font-size: $smallHoverText;
+        line-height: 1.43;
+
     }
     
 }

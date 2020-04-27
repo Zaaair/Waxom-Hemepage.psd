@@ -1,0 +1,26 @@
+.counter{
+    background-image: $gradient;
+    padding-bottom: 82px;
+}
+.counter-content{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    max-width: 928px;
+    margin: 0 auto;
+
+}
+.counter-compartment {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+}
+.counter-icon {
+    font-size: 45px;
+    color: $hoverColor;
+    display: block;
+    margin-bottom: 30px;
+
+}
