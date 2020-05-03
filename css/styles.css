@@ -229,6 +229,14 @@ body {
   font-size: 48px;
   color: #fff;
 }
+.post-description .title {
+  color: #555555;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.post-media:hover .title {
+  color: #c7b299;
+}
 
 .title-secondary {
   color: #555555;
@@ -288,6 +296,21 @@ body {
   color: #c7b299;
   font-size: 14px;
   line-height: 1.43;
+}
+.post-text .paragraph {
+  color: #8c8c8c;
+  line-height: 1.75;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.post-description .paragraph {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+.post-media:hover .paragraph {
+  color: #fff;
 }
 
 .highlight {
@@ -412,22 +435,12 @@ body {
 .mobile-content .media {
   padding-bottom: 52%;
   max-width: 423px;
-}
-
-.card:hover .media .media-overlay {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(17, 17, 17, 0.7);
+  align-self: flex-end;
 }
 
 .media-content {
   position: absolute;
-  top: 0px;
+  top: 0;
   /* растягиваем от края до края картинку*/
   left: 0;
   bottom: 0;
@@ -540,6 +553,77 @@ body {
   color: #fff;
 }
 
+.read-more {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  margin: 30px 0;
+  font-size: 14px;
+}
+
+.read-more-link {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #c7b299;
+}
+.read-more-link::after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 8px solid #c7b299;
+  top: 5px;
+  left: 80px;
+}
+
+.calendar {
+  position: absolute;
+  max-width: 50px;
+  display: flex;
+  flex-direction: column;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.calendar-number {
+  min-width: 50px;
+  height: 35px;
+  background-color: #363636;
+  padding-left: 0 5px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.post-media:hover .calendar-number {
+  background-color: #c7b299;
+  color: #fff;
+}
+
+.calendar-month {
+  min-width: 50px;
+  height: 25px;
+  background-color: #252525;
+  padding-left: 0 5px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.post-media:hover .calendar-month {
+  color: #fff;
+  background-color: #a48d72;
+}
+
 /* LAYOUT */
 .header {
   padding: 40px 0;
@@ -570,7 +654,7 @@ body {
   color: #c7b299;
 }
 
-.banner {
+.banner, .second-banner {
   background-image: url(../img/banner.png);
   /*картинка*/
   background-repeat: no-repeat;
@@ -590,7 +674,7 @@ body {
   padding: 136px 0;
   /* отступ при сужении экрана */
 }
-.banner::before {
+.banner::before, .second-banner::before {
   /* добовляем темную шторку */
   content: "";
   position: absolute;
@@ -615,6 +699,17 @@ body {
   margin: 0 auto;
   padding: 0 15px 0 15px;
   text-align: center;
+}
+
+.second-banner {
+  background-image: url(../img/huas1.jpeg);
+  min-height: 489px;
+}
+
+.second-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .offers {
@@ -784,4 +879,67 @@ body {
   color: #c7b299;
   display: block;
   margin-bottom: 30px;
+}
+
+.post {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.post-text {
+  max-width: 757px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-slaider {
+  position: relative;
+  max-width: 370px;
+  padding-bottom: 59%;
+}
+.post-media:hover .post-slaider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7);
+}
+
+.post-media {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-description {
+  max-width: 370px;
+  padding: 29px;
+  padding-bottom: 71px;
+}
+.post-media:hover .post-description {
+  background-color: #362f2d;
+}
+
+.post-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.post-arrows {
+  font-size: 22px;
+  color: #d1d1d1;
+}
+.post-arrows:hover {
+  color: #c7b299;
 }

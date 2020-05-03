@@ -24,6 +24,15 @@
         font-size: 48px;
         color: $primaryColor;
     }
+    .post-description & {
+        color: $markerColor;
+        font-size: $bigHoverText;
+        font-family: $mainFont;
+    }
+    .post-media:hover & {
+        color: $hoverColor;
+
+    }
 }
 
 .title-secondary {
@@ -83,9 +92,23 @@
         color: $hoverColor;
         font-size: $smallHoverText;
         line-height: 1.43;
+    }
+    .post-text & {
+        color: $smallTextColor;
+        line-height: 1.75;
+        max-width: 757px;
+        margin: 0 auto;
+    }
+    .post-description & {
+        color: $smallTextColor;
+        font-size: $smallHoverText;
+        font-family: $secondaryFont;
+        line-height: 1.5;
+    }
+    .post-media:hover & {
+        color: $primaryColor;
 
     }
-    
 }
 
 .highlight {

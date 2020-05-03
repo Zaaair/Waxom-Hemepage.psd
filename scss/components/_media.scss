@@ -11,32 +11,12 @@
     .mobile-content & {
         padding-bottom: 52%;
         max-width: 423px;
+        align-self: flex-end;
     }
 }
-// шторка на картинку карточки при наведении //
-.media {
-    //что с ним произойдет //
-    .card:hover & .media-overlay { // есле проджект ховер тогда медиа афтер//
-        content: "";
-        position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(17, 17, 17, 0.7);
-
-    }
-    //    &::after {
-    //         .card:hover & {
-
-    //         }
-    //     }
-}
-
 .media-content {
     position: absolute;
-    top: 0px; /* растягиваем от края до края картинку*/
+    top: 0; /* растягиваем от края до края картинку*/
     left: 0;
     bottom: 0;
     right: 0;
@@ -44,7 +24,7 @@
     max-height: 100%;
     object-fit: cover;
 }
-
+// шторка на картинку карточки при наведении //
 .media-overlay {
     position: absolute;
     z-index: 1;

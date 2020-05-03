@@ -32,4 +32,15 @@
     text-align: center;
 }
 
+.second-banner {
+    @extend .banner;
+    background-image: url(../img/huas1.jpeg);
+    min-height: 489px;  
+}
+.second-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
