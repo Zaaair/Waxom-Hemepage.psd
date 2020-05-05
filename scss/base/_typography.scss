@@ -31,8 +31,22 @@
     }
     .post-media:hover & {
         color: $hoverColor;
+    }
+    .second-pillar & {
+        color: $primaryColor;
+        font-size: 24px;
+    }
+    .third-pillar & {
+        color: $primaryColor;
+        font-size: 24px;
 
     }
+    .fourth-pillar & {
+        color: $primaryColor;
+        font-size: 24px;
+
+    }
+
 }
 
 .title-secondary {
@@ -107,7 +121,18 @@
     }
     .post-media:hover & {
         color: $primaryColor;
-
+    }
+    .article-info & {
+        color: #555555;
+        font-size: $smallHoverText;
+    }
+    .bookmark & {
+        font-size: $smallHoverText;
+        color: $markerColor;
+        line-height: 1.43;
+        &:hover {
+            color: $hoverColor;
+        }
     }
 }
 
