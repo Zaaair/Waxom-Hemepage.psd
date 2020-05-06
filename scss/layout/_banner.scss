@@ -1,0 +1,47 @@
+.banner {
+    background-image: url(../img/banner.png); /*картинка*/
+    background-repeat: no-repeat; /* повторение*/
+    background-position: center center; /*позиция картинки*/
+    background-size: cover; /* заполонение картинки*/
+    min-height: 1024px;  
+    width: 100%;
+    position: relative;
+    z-index: 0; /* слой оси z */
+    display: flex;
+    align-items: center; /* ровняем содержимое по центру */
+    padding: 136px 0; /* отступ при сужении экрана */
+    &::before { /* добовляем темную шторку */
+        content: "";
+        position: absolute;
+        left: 0; /*точка в которой появится шторка*/
+        top: 0;  /*точка в которой появится шторка*/
+        width: 100%; /* ростягиваем на весь размер баннера */
+        height: 100%; /* ростягиваем на весь размер баннера */
+        background-color: rgba(17, 17, 17, 0.7); /* цвет шторки с прозрачностью*/
+        z-index: -1; /* позиция шторки по отношению к банеру*/
+    }
+    
+}
+
+    /* содержимое класса banner-content выравнивается во центру блока*/
+.banner-slider {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    text-align: center;
+}
+
+.second-banner {
+    @extend .banner;
+    background-image: url(../img/huas1.jpeg);
+    min-height: 489px;  
+}
+.second-banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-slider-content
+
+

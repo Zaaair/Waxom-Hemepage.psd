@@ -1,0 +1,55 @@
+.media {
+    width: 100%;
+    height: 0;
+    padding-bottom: 39%; /* вычесляется по формуле место для картинки*/
+    position: relative;
+    .projects & {
+        padding-bottom: 64%;
+        min-width: 370px;
+        overflow: hidden; // скрывает все что не поподает в медиа //
+    }
+    .mobile-content & {
+        padding-bottom: 52%;
+        max-width: 423px;
+        align-self: flex-end;
+    }
+}
+.media-content {
+    position: absolute;
+    top: 0; /* растягиваем от края до края картинку*/
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+// шторка на картинку карточки при наведении //
+.media-overlay {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 17, 17, 0.7);
+    // display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%); // вылазит шторка с верху , по Х - будет вылазить с боку работает с оверфлоу хиден //
+    @extend %transition;
+    .card:hover & {
+        // display: flex;
+        transform: translateY(0);
+    }
+}
+
+.media-link {
+    height: 26px;
+    width: 26px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+
+}

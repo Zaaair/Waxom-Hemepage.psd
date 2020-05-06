@@ -1,0 +1,17 @@
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo-img{
+    width: 64px; /* огроничил размером картинку */
+    height: 56px;
+    color: $mainTextColor;
+    object-fit: contain;
+
+}
+.logo-text{
+   
+    font-size: 34px;
+    color: $mainTextColor;
+}

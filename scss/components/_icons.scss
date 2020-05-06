@@ -1,0 +1,63 @@
+// .pen-icon {
+//     display: block; /* делаем <i> блоком */
+//     height: 49px; /* фиксируем велечину картинки*/
+//     width: 49px;
+//     background-image: url(../img/icon-1.svg); /* путь к картинке*/
+//     background-repeat: no-repeat; /* свойвства которые обязательно для картинки*/
+//     background-position: center center; /* свойвства которые обязательно для картинки*/
+//     background-size: cover; /* свойвства которые обязательно для картинки*/
+//     margin: 0 auto; /* выравниваеим картинку по центру */
+//     margin-bottom: 29px; /* отодвигаем блок от ниже стоящего*/
+//     .offers-box:hover & {
+//         /* есле родитель картинки ховер, тогда */
+//         background-image: url(../img/icon-1hover.svg); /* картинка меняется на другую*/
+//     }
+// } /* ховер не применился к второй картинке*/
+// /* и не получилось на второй класс повесить ховер */
+
+// .pen-icon2 {
+//     /*картинка второго блока*/
+//     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+//     background-image: url(../img/icon-2.svg); /* картинку меняем на нужную*/
+//     .offers-box:hover & {
+//         /* есле родитель картинки ховер, тогда */
+//         background-image: url(../img/icon-2hover.svg); /* картинка меняется на другую*/
+//     }
+// }
+
+// .pen-icon3 {
+//     /*картинка третего блока*/
+//     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+//     background-image: url(../img/icon-3.svg); /* картинку меняем на нужную*/
+//     .offers-box:hover & {
+//         /* есле родитель картинки ховер, тогда */
+//         background-image: url(../img/icon-3hover.svg); /* картинка меняется на другую*/
+//     }
+// }
+
+// .pen-icon4 {
+//     /*картинка четвертого блока*/
+//     @extend .pen-icon; /* применяем все стили класса pen-icon к этому классу*/
+//     background-image: url(../img/icon-4.svg); /* картинку меняем на нужную*/
+//     .offers-box:hover & {
+//         /* есле родитель картинки ховер, тогда */
+//         background-image: url(../img/icon-4hover.svg); /* картинка меняется на другую*/
+//     }
+// }
+.arrow-right-icon {
+    @extend %bg-cover; /* присвоили тихий класс */
+    font-size: 21px;
+    color: $hoverColor;
+}
+
+.link-icon{
+    @extend %bg-cover; /* присвоили тихий класс */
+    @extend %transition;
+    font-size: 26px;
+    color: $primaryColor;
+    .media-link:hover & {
+        color: $hoverColor;
+    }
+
+}
+

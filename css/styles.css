@@ -1,3 +1,16 @@
+@charset "UTF-8";
+/* HELPER */
+.header-controls-link, .media-overlay, .link-icon, .nav-link {
+  transition: all 0.5s ease-in;
+  /* анимация ховера*/
+}
+
+.link-icon, .arrow-right-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 /* BASE */
 html {
   box-sizing: border-box;
@@ -120,12 +133,12 @@ a:active {
 }
 
 ul {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   list-style: none;
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding: 0;
 }
 
@@ -156,7 +169,6 @@ input,
 button {
   border-radius: 0;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -179,130 +191,861 @@ table {
   border-collapse: collapse;
 }
 
-/* HELPER */
-/* LAYOUT */
-header {
-  position: absolute;
-  margin-top: 40px;
-  height: 56px;
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  /* делает так что все элементы в нем распологаються ровно по середине */
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+}
+
+.heading-main {
+  color: #ffffff;
+  font-size: 52px;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading-2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+}
+
+.title {
+  color: #555555;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+.theme-info-text .title {
+  font-size: 28px;
+  color: #fff;
+}
+.counter-compartment .title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  color: #fff;
+}
+.post-description .title {
+  color: #555555;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+}
+.post-media:hover .title {
+  color: #c7b299;
+}
+.second-pillar .title {
+  color: #fff;
+  font-size: 24px;
+}
+.third-pillar .title {
+  color: #fff;
+  font-size: 24px;
+}
+.fourth-pillar .title {
+  color: #fff;
+  font-size: 24px;
+}
+
+.title-secondary {
+  color: #555555;
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin: 0 0 19px;
+  display: block;
+}
+.offers-box:hover .title-secondary {
+  color: #c7b299;
+}
+
+.paragraph {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+.offers-box .paragraph {
+  font-size: 14px;
+  color: #8c8c8c;
+}
+.offers-box:hover .paragraph {
+  color: #c7b299;
+}
+.realization-content .paragraph {
+  font-size: 16px;
+  color: #8c8c8c;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.theme-info-text .paragraph {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #615855;
+}
+.advertising-text .paragraph {
+  color: #8c8c8c;
+  line-height: 1.75;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.mobile-text .paragraph {
+  color: #8c8c8c;
+  line-height: 1.75;
+}
+.mobile-option-section .paragraph {
+  margin-left: 29px;
+  line-height: 2;
+}
+.banner-content .paragraph {
+  padding-bottom: 52px;
+}
+.counter-compartment .paragraph {
+  font-family: "Montserrat", sans-serif;
+  color: #c7b299;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.post-text .paragraph {
+  color: #8c8c8c;
+  line-height: 1.75;
+  max-width: 757px;
+  margin: 0 auto;
+}
+.post-description .paragraph {
+  color: #8c8c8c;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+.post-media:hover .paragraph {
+  color: #fff;
+}
+.article-info .paragraph {
+  color: #555555;
+  font-size: 14px;
+}
+.bookmark .paragraph {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.43;
+}
+.bookmark .paragraph:hover {
+  color: #c7b299;
+}
+
+.highlight {
+  color: #c7b299;
+}
+
+/* COMPONENTS */
+.button {
+  min-width: 170px;
+  /*мин ширина для того ( есле текст в нутри станет больше чтоб не увеличило кнопку*/
+  height: 53px;
+  /* высота кнопки*/
+  background-color: #998675;
+  /* цвет*/
+  padding-left: 5px;
+  /* отступы в нутри блока чтоб не налазил текст при сжатии*/
+  padding-right: 5px;
+  color: #ffffff;
+  /* цвет текста*/
+  border-radius: 5px;
+  /* округление углов рамки*/
+  box-shadow: inset 0px -3px 0 0 #736357;
+  /* тень*/
+  transition: all 1s ease-in;
+  /* нажатие кнопки*/
+  opacity: 1;
+  /* прозрачность ( для того чтоб сработало прозрачность на ховере)*/
+  display: inline-block;
+  /* насильно делаем кнопку инлайн блоком*/
+  line-height: 53px;
+  /* высота линии текста( дубль высоты кнопки)*/
+  text-transform: uppercase;
+  /* текст в нутри БОЛЬШИМИ БУКВАМИ*/
+  text-align: center;
+  /* текст всегда по центру */
+}
+.button:hover {
+  box-shadow: inset 0 0 0 0 #736357;
+  opacity: 0.8;
+  /* прозрачность при ховере*/
+}
+.advertising-content .button {
+  margin: 0 auto;
+  display: block;
+}
+
+.logo {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-/* 
-.baner{
-    background-image: url(img/photo.png);
-    width: 1920px;
-    height: 1024px;
-}
-.baner{
-    position: relative;
+.logo-img {
+  width: 64px;
+  /* огроничил размером картинку */
+  height: 56px;
+  color: #ffffff;
+  object-fit: contain;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 219px;
-    margin-left: 200px;
-}
-.name{
-    width: 115px;
-    height: 26px;
-    color: $primaryColor;
-    font-family: Raleway;
-    font-size: 34px;
-    font-weight: 400;
-}
-.navigation-li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu{
-    list-style: none;
-}
-.menu a{
-    width: 42px;
-    height: 10px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-    padding-left: 30px;
-    text-decoration: none;
-}
-.menu a:hover{
-    width: 64px;
-    height: 11px;
-    color: #c7b299;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 300;
-}
-.search{
-    margin-left: 35px;
-}
-.search a{
-    margin-left: 28px;
-}
-.baner-box{
-    position: absolute;
-    top: 381px;
-    left: 666px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.baner-box h2{
-    width: 456px;
-    height: 34px;
-    color: #ffffff;
-    font-family: Raleway;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 0;
-}
-.baner-box h1{
-    width: 589px;
-    height: 50px;
-    margin: 0;
-    font-family: "Raleway - Extra Bold";
-    font-size: 52px;
-    font-weight: 400;
-    color: #ffffff;
-
-}
-.baner-box h3{ 
-    width: 562px;
-    height: 39px;
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-top: 15px;
-}
-.buttonstyl{
-    width: 94px;
-    height: 11px;
-    color: #ffffff;
-    font-family: "Raleway - Extra Bold";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 23px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 610px;
-    left: 913px;
-    z-index: 2;
+.logo-text {
+  font-size: 34px;
+  color: #ffffff;
 }
 
-.buttonimg{
-    position: absolute;
-    top: 595px;
-    left: 876px;
+.nav {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
-*/
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 5px;
+}
+
+.nav-link {
+  /* сылке делаем ховер*/
+  color: #fff;
+  padding: 0 10px;
+  /* расширяем кликабельность сылки*/
+  /* расширяю класс тихим классом в (плейсхолдере)*/
+}
+.advertising-nav .nav-link {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+.nav-item:hover .nav-link {
+  /* наследуем состояние радителя*/
+  color: #c7b299;
+}
+
+.arrow-right-icon {
+  /* присвоили тихий класс */
+  font-size: 21px;
+  color: #c7b299;
+}
+
+.link-icon {
+  /* присвоили тихий класс */
+  font-size: 26px;
+  color: #fff;
+}
+.media-link:hover .link-icon {
+  color: #c7b299;
+}
+
+.media {
+  width: 100%;
+  height: 0;
+  padding-bottom: 39%;
+  /* вычесляется по формуле место для картинки*/
+  position: relative;
+}
+.projects .media {
+  padding-bottom: 64%;
+  min-width: 370px;
+  overflow: hidden;
+}
+.mobile-content .media {
+  padding-bottom: 52%;
+  max-width: 423px;
+  align-self: flex-end;
+}
+
+.media-content {
+  position: absolute;
+  top: 0;
+  /* растягиваем от края до края картинку*/
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.media-overlay {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+.card:hover .media-overlay {
+  transform: translateY(0);
+}
+
+.media-link {
+  height: 26px;
+  width: 26px;
+  display: block;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+.card-descr:hover .card {
+  background-color: #362f2d;
+}
+
+.card-descr {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fbfaf8;
+  margin-bottom: 30px;
+  padding: 13px 30px;
+}
+.card-descr::before {
+  content: "";
+  border: 20px solid transparent;
+  border-bottom: 20px solid #fbfaf8;
+  position: absolute;
+  top: -39px;
+  left: 14px;
+  z-index: 2;
+}
+.card:hover .card-descr::before {
+  border-bottom: 20px solid #362f2d;
+}
+.card:hover .card-descr {
+  background-color: #362f2d;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #c7b299;
+  margin-bottom: 14px;
+}
+.card:hover .card-title {
+  color: #fff;
+}
+
+.card-info {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #d1d1d1;
+}
+.card:hover .card-info {
+  color: #c7b299;
+}
+
+.sort-list {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.sort-item {
+  display: inline-block;
+  border: solid 1px #ebebeb;
+  border-radius: 3px;
+  margin: 0 5px;
+}
+.sort-item:hover {
+  background-color: #998675;
+}
+
+.sort-link {
+  color: #8c8c8c;
+  font-size: 14px;
+  padding: 8px 18px;
+  display: block;
+}
+.sort-link:hover {
+  color: #fff;
+}
+
+.read-more {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  margin: 30px 0;
+  font-size: 14px;
+}
+.article-content .read-more {
+  left: 0;
+  bottom: 0;
+}
+
+.read-more-link {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #c7b299;
+}
+.read-more-link::after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 8px solid #c7b299;
+  top: 5px;
+  left: 80px;
+}
+.article-content .read-more-link {
+  color: #d1d1d1;
+}
+
+.calendar {
+  position: absolute;
+  max-width: 50px;
+  display: flex;
+  flex-direction: column;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.calendar-number {
+  min-width: 50px;
+  height: 35px;
+  background-color: #363636;
+  padding-left: 0 5px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.post-media:hover .calendar-number {
+  background-color: #c7b299;
+  color: #fff;
+}
+
+.calendar-month {
+  min-width: 50px;
+  height: 25px;
+  background-color: #252525;
+  padding-left: 0 5px;
+  color: #ffffff;
+  display: inline-block;
+  line-height: 25px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.post-media:hover .calendar-month {
+  color: #fff;
+  background-color: #a48d72;
+}
+
+/* LAYOUT */
+.header {
+  padding: 40px 0;
+  /* отступ блока с хедером с верху и низу*/
+  position: absolute;
+  /* выбиваем из потока банера*/
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-terminal {
+  display: flex;
+}
+
+.header-controls-link {
+  margin-left: 28px;
+  color: #fff;
+  font-size: 24px;
+}
+.header-controls-link:hover {
+  color: #c7b299;
+}
+
+.banner, .second-banner {
+  background-image: url(../img/banner.png);
+  /*картинка*/
+  background-repeat: no-repeat;
+  /* повторение*/
+  background-position: center center;
+  /*позиция картинки*/
+  background-size: cover;
+  /* заполонение картинки*/
+  min-height: 1024px;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  /* слой оси z */
+  display: flex;
+  align-items: center;
+  /* ровняем содержимое по центру */
+  padding: 136px 0;
+  /* отступ при сужении экрана */
+}
+.banner::before, .second-banner::before {
+  /* добовляем темную шторку */
+  content: "";
+  position: absolute;
+  left: 0;
+  /*точка в которой появится шторка*/
+  top: 0;
+  /*точка в которой появится шторка*/
+  width: 100%;
+  /* ростягиваем на весь размер баннера */
+  height: 100%;
+  /* ростягиваем на весь размер баннера */
+  background-color: rgba(17, 17, 17, 0.7);
+  /* цвет шторки с прозрачностью*/
+  z-index: -1;
+  /* позиция шторки по отношению к банеру*/
+}
+
+/* содержимое класса banner-content выравнивается во центру блока*/
+.banner-content {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px 0 15px;
+  text-align: center;
+}
+
+.second-banner {
+  background-image: url(../img/huas1.jpeg);
+  min-height: 489px;
+}
+
+.second-banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers {
+  padding: 80px 0;
+}
+
+.offers-content {
+  display: flex;
+  /* выстраиваем содержимое в ряд*/
+  justify-content: space-between;
+}
+
+.offers-box {
+  position: relative;
+  /* фексируем блок чтобы можно было подвинуть бефор*/
+  max-width: 252px;
+  /* ширина блока с контентом*/
+  padding: 0 15px;
+  /* отступ по бокам */
+  padding-bottom: 30px;
+  /* отсту с низу*/
+  width: 100%;
+  text-align: center;
+  /* распологаем содержимое по центру*/
+}
+.offers-box::before {
+  /* рисуем полосочку в низу блока*/
+  content: "";
+  /* обязательное свойвство для всех бефор и автор*/
+  width: 70px;
+  /* длинна палочки*/
+  height: 3px;
+  /* толчина палочки*/
+  background-color: #f1eee9;
+  /* цвет палочки*/
+  position: absolute;
+  /* для перемещенич бефора*/
+  top: 100%;
+  /* опускаем в низ*/
+  left: 50%;
+  /* выстовляем по центру блока*/
+  transform: translateX(-50%);
+  /* выстовляем по центру блока*/
+}
+.offers-box:hover::before {
+  background-color: #c7b299;
+}
+
+.offers-icon {
+  font-size: 49px;
+  color: #555555;
+  display: block;
+  margin-bottom: 29px;
+}
+.offers-box:hover .offers-icon {
+  color: #c7b299;
+}
+
+.realization {
+  padding-top: 83px;
+  background-color: #fbfaf8;
+}
+
+.realization-content {
+  text-align: center;
+}
+
+.theme-info {
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding: 50px 0;
+}
+
+.theme-info-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advertising {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.advertising-text {
+  max-width: 757px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 36%;
+}
+
+.video-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile {
+  padding-top: 79px;
+}
+
+.mobile-content {
+  display: flex;
+}
+
+.mobile-text {
+  margin-top: 116px;
+  max-width: 657px;
+}
+
+.mobile-option {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding-left: 50px;
+}
+
+.mobile-option-section {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  padding: 60px 0;
+}
+
+.counter-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.counter-compartment {
+  position: relative;
+  text-align: center;
+  padding: 0 15px;
+  padding-bottom: 30px;
+}
+.counter-compartment::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.counter-icon {
+  font-size: 45px;
+  color: #c7b299;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.post {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.post-text {
+  max-width: 757px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.post-slaider {
+  position: relative;
+  max-width: 370px;
+  padding-bottom: 59%;
+}
+.post-media:hover .post-slaider::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.7);
+}
+
+.post-media {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-description {
+  max-width: 370px;
+  padding: 29px;
+  padding-bottom: 71px;
+}
+.post-media:hover .post-description {
+  background-color: #362f2d;
+}
+
+.post-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.post-arrows {
+  font-size: 22px;
+  color: #d1d1d1;
+}
+.post-arrows:hover {
+  color: #c7b299;
+}
+
+.article {
+  padding: 80px 0;
+  background-color: #191919;
+}
+
+.article-content {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-pillar {
+  position: relative;
+  max-width: 250px;
+}
+
+.article-info {
+  padding: 30px 0;
+}
+
+.second-pillar {
+  margin-top: 28px;
+}
+
+.bookmark {
+  position: relative;
+  max-width: 250px;
+  padding-bottom: 21px;
+}
+.bookmark::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 270px;
+  height: 2px;
+  background-color: #252525;
+}
+
+.bookmark-date {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  color: #363636;
+  line-height: 1.67;
+}
+.bookmark:hover .bookmark-date {
+  color: #fff;
+}
+
+.third-pillar {
+  margin-top: 28px;
+  max-width: 250px;
+}
+
+.twit {
+  color: #00bff3;
+}
+
+.twit-bit {
+  color: #959595;
+}
+
+.fourth-pillar {
+  margin-top: 28px;
+  max-width: 290px;
+}
+
+.pillar-img-link {
+  margin: 5px;
+}
+
+.pillar-img {
+  display: flex;
+  flex-wrap: wrap;
+}

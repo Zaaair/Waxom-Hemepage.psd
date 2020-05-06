@@ -1,0 +1,36 @@
+.counter{
+    background-image: $gradient;
+    padding: 60px 0;
+}
+.counter-content{
+    display: flex;
+    justify-content: space-around;
+
+}
+.counter-compartment {
+    position: relative;
+    text-align: center;
+    padding: 0 15px;
+    padding-bottom: 30px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        background-color: $primaryColor;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    
+
+}
+.counter-icon {
+    font-size: 45px;
+    color: $hoverColor;
+    display: block;
+    margin-bottom: 30px;
+
+}

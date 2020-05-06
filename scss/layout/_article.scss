@@ -1,0 +1,67 @@
+.article {
+    padding: 80px 0;
+    background-color: #191919;
+}
+.article-content {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.first-pillar {
+    position: relative;
+    max-width: 250px;
+
+}
+.article-logo {
+}
+.article-info {
+    padding: 30px 0;
+}
+.second-pillar {
+    margin-top: 28px;
+}
+.bookmark {
+    position: relative;
+    max-width: 250px;
+    padding-bottom: 21px;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 270px;
+        height: 2px;
+        background-color: #252525;
+    }
+}
+.bookmark-date {
+    font-size: 12px;
+    font-family: $secondaryFont;
+    color: #363636;
+    line-height: 1.67;
+    .bookmark:hover & {
+        color: $primaryColor;
+    }
+}
+.third-pillar {
+    margin-top: 28px;
+    max-width: 250px;
+}
+.twit {
+    color: #00bff3;
+}
+.twit-bit {
+    color: #959595;
+}
+.fourth-pillar {
+    margin-top: 28px;
+    max-width: 290px;
+
+
+}
+.pillar-img-link {
+    margin: 5px;
+}
+.pillar-img {
+    display: flex;
+    flex-wrap: wrap;
+}

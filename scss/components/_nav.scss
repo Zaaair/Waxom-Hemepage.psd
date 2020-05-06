@@ -1,0 +1,29 @@
+.nav {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.nav-link {
+    /* сылке делаем ховер*/
+    color: $primaryColor;
+    padding: 0 10px; /* расширяем кликабельность сылки*/
+    @extend %transition; /* расширяю класс тихим классом в (плейсхолдере)*/
+    .advertising-nav & {
+        color: $smallTextColor;
+        font-size: $smallHoverText;
+    }
+    .nav-item:hover & {
+        /* наследуем состояние радителя*/
+        color: $hoverColor;
+    }
+}
+
