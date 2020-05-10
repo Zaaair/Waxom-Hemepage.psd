@@ -725,8 +725,6 @@ body {
   display: flex;
   align-items: center;
   /* ровняем содержимое по центру */
-  padding: 136px 0;
-  /* отступ при сужении экрана */
 }
 .banner::before, .second-banner::before {
   /* добовляем темную шторку */
@@ -749,12 +747,14 @@ body {
 /* содержимое класса banner-content выравнивается во центру блока*/
 .banner-slider {
   width: 100%;
-  min-height: 1024px;
-  padding: 0 15px 0 15px;
+  height: 1024px;
   text-align: center;
 }
 .banner-slider:focus {
   outline: none;
+}
+.banner-slider.slick-slider .slick-list, .banner-slider.slick-slider .slick-track {
+  height: 100%;
 }
 .banner-slider .slick-arrow {
   font-size: 0;
@@ -784,7 +784,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 99;
-  bottom: -327px;
+  bottom: 50px;
   font-size: 0;
 }
 .banner-slider .slick-dots button {
@@ -822,6 +822,12 @@ body {
 .banner-slider-content {
   background-image: url(../img/wallpapers-mountains-0.jpg);
   /*картинка*/
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 136px 0;
+  /* отступ при сужении экрана */
 }
 
 .offers {
@@ -1175,5 +1181,10 @@ body {
 }
 
 .footer-link {
+  /* не поменялся цвет, проверить*/
+  color: #555555;
+}
+
+.footer-content-logo {
   color: #959595;
 }

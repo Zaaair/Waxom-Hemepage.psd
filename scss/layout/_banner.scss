@@ -8,7 +8,7 @@
     z-index: 0; /* слой оси z */
     display: flex;
     align-items: center; /* ровняем содержимое по центру */
-    padding: 136px 0; /* отступ при сужении экрана */
+    // padding: 136px 0; /* отступ при сужении экрана */
     &::before {
         /* добовляем темную шторку */
         content: "";
@@ -26,13 +26,17 @@
 .banner-slider {
     // max-width: 620px;
     width: 100%;
-    min-height: 1024px;
+    height: 1024px;
     // margin: 0 auto;
-    padding: 0 15px 0 15px;
+    // padding: 0 15px 0 15px;
     text-align: center;
     // overflow: hidden;
     &:focus {
         outline: none;
+    }
+    &.slick-slider .slick-list, 
+    &.slick-slider .slick-track {
+        height: 100%;
     }
     .slick-arrow {
         font-size: 0;
@@ -63,7 +67,7 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: 99;
-        bottom: -327px;
+        bottom: 50px;
         font-size: 0;
         button {
             width: 11px;
@@ -111,4 +115,9 @@
 .banner-slider-content {
     background-image: url(../img/wallpapers-mountains-0.jpg); /*картинка*/
     @extend %bg-cover;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 136px 0; /* отступ при сужении экрана */
 }
