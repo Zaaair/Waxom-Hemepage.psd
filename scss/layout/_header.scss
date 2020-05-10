@@ -1,6 +1,6 @@
 .header {
     padding: 40px 0; /* отступ блока с хедером с верху и низу*/
-    position: fixed; /* выбиваем из потока банера*/
+    position: absolute; /* выбиваем из потока банера*/
     left: 0;
     top: 0;
     width: 100%;
