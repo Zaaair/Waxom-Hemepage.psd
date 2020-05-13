@@ -4,14 +4,19 @@
 
 }
 .logo-img{
-    width: 64px; /* огроничил размером картинку */
-    height: 56px;
+    width: 36px; /* огроничил размером картинку */
+    height: 30px;
     color: $mainTextColor;
     object-fit: contain;
-
+    @media (min-width: 1120px) {
+        width: 64px; /* огроничил размером картинку */
+        height: 56px;
+    }
 }
 .logo-text{
-   
-    font-size: 34px;
+    font-size: 21px;
     color: $mainTextColor;
+    @media (min-width: 1120px) {
+        font-size: 34px;
+    }
 }
