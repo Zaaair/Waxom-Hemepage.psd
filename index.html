@@ -1,92 +1,661 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Waxom</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="baner">
-            <header>
-                <div class="logo">
-                    <a href="#" class="logo-icon">
-                        <img src="img/logos.png" alt="#">
+
+<head>
+    <title>Waxom</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <!--настройки viewport=экран дивайса-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"> -->
+    <link rel="stylesheet" href="font/icomoon/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1 class="hidden"></h1>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="img/snapchat.svg" alt="#">
+                        <span class="logo-text">Waxom</span>
                     </a>
-                    <p class="name">Waxom</p>
+                    <div class="header-terminal">
+                        <nav class="nav">
+                            <ul class="nav-list">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Shortcodes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-controls">
+                            <a href="#" class="header-controls-link">
+                                <span class="icon-cart"></span>
+                            </a>
+                            <a href="#" class="header-controls-link">
+                                <span class="icon-search"></span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="navigation">
-                    <nav class="navigation-li">
-                        <li class="menu">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">About Us</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Portfolio</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Features</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Blog</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Pricing</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Shortcodes</a>
-                        </li>
-                        <li class="menu">
-                            <a href="#">Contact</a>
-                        </li>
-                    </nav>
+                <div class="mobile-menu-btn">
+
                 </div>
-                <div class="search">
-                    <a href="#">
-                        <img src="img/icon-cart.png" alt="#">
-                    </a>
-                    <a href="#">
-                        <img src="img/icon-search.png" alt="#">
-                    </a>
-                </div>
-            </header>
-            <div class="baner-box">
-                <h2>Unique and Modern Design</h2>
-                <h1>Portfolio PSD Template</h1>
-                <h3>Nam liber tempor cum soluta nobis eleifend option congue nihil imper<br>diet doming id quod mazim placerat facer possim assum. </h3>
             </div>
-            <div class="button">
-                <a class="buttonstyl">Get Started</a>
-                   <img src="img/button.png" alt="#" class="buttonimg">
+        </header>
+        <div class="banner-slider" id="jsBannerSlider">
+            <div class="banner-slider-content">
+                <h2 class="heading-2">Unique and Modern Design 1</h2>
+                <h3 class="heading-main">Portfolio PSD Template</h3>
+                <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imper<br>diet doming
+                    id
+                    quod mazim placerat facer possim assum. </p>
+                <button class="button">GET STARTED</button>
+            </div>
+            <div class="banner-slider-content">
+                <h2 class="heading-2">Unique and Modern Design 2</h2>
+                <h3 class="heading-main">Portfolio PSD Template</h3>
+                <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imper<br>diet doming
+                    id
+                    quod mazim placerat facer possim assum. </p>
+                <button class="button">GET STARTED</button>
+            </div>
+            <div class="banner-slider-content">
+                <h2 class="heading-2">Unique and Modern Design 3</h2>
+                <h3 class="heading-main">Portfolio PSD Template</h3>
+                <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imper<br>diet doming
+                    id
+                    quod mazim placerat facer possim assum. </p>
+                <button class="button">GET STARTED</button>
             </div>
         </div>
-
+    </div>
+    <!-- блок для падингов офер( верхних и нижних) -->
+    <div class="offers">
+        <!-- блок выравнивания по центру -->
+        <div class="container">
+            <!-- выравнивания флексом -->
+            <div class="offers-content">
+                <div class="offers-box">
+                    <i class="icon-pencil offers-icon"></i>
+                    <span class="title-secondary">Web & App Design</span>
+                    <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                        id quod mazim.</p>
+                </div>
+                <div class="offers-box">
+                    <i class="icon-book offers-icon"></i>
+                    <span class="title-secondary">Development</span>
+                    <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                        id quod mazim.</p>
+                </div>
+                <div class="offers-box ">
+                    <i class="icon-bag offers-icon"></i>
+                    <span class="title-secondary">Customization</span>
+                    <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                        id quod mazim.</p>
+                </div>
+                <div class="offers-box">
+                    <i class="icon-option offers-icon"></i>
+                    <span class="title-secondary">Marketing</span>
+                    <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                        id quod mazim.</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="realization">
+        <div class="container">
+            <div class="realization-content">
+                <h3 class="title">Waxom is Realization of your Ideas.</h3>
+                <p class="paragraph">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                    Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                <div class="media">
+                    <img src="img/background@3x.png" alt="#" class="media-content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="theme-info">
+        <div class="container">
+            <div class="theme-info-content">
+                <div class="theme-info-text">
+                    <!-- для чего он ?-->
+                    <h3 class="title">
+                        <span class="highlight">Waxom</span>
+                        Multipurpose WordPress Theme
+                    </h3>
+                    <p class="paragraph">Don't Forget to Rate the Template. Thanks so much! </p>
+                </div>
+                <a href="#" class="button">Purchase Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="advertising">
+        <div class="container">
+            <div class="advertising-content">
+                <div class="advertising-text">
+                    <h3 class="title">Our Latest Projects.</h3>
+                    <span class="paragraph">
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                        etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                    </span>
+                </div>
+                <ul class="sort-list">
+                    <li class="sort-item">
+                        <a class="sort-link" href="#">All</a>
+                    </li>
+                    <li class="sort-item">
+                        <a class="sort-link" href="#">Web Design</a>
+                    </li>
+                    <li class="sort-item">
+                        <a class="sort-link" href="#">Mobile App</a>
+                    </li>
+                    <li class="sort-item">
+                        <a class="sort-link" href="#">Illustration</a>
+                    </li>
+                    <li class="sort-item">
+                        <a class="sort-link" href="#">Photography</a>
+                    </li>
+                </ul>
+                <div class="projects">
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-1.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Claritas Etiam Processus</span>
+                            <p class="card-info">Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-2.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Quam Nutamus Farum</span>
+                            <p class="card-info">Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-3.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Usus Legentis Videntur</span>
+                            <p class="card-info">Photography, Holiday</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-4.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Claritas Etiam Processus</span>
+                            <p class="card-info">Photography, Nature</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-5.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Quam Nutamus Farum</span>
+                            <p class="card-info">Graphic Design, Mock-Up</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="media">
+                            <img src="img/photo-6.jpg" alt="#" class="media-content">
+                            <div class="media-overlay">
+                                <a href="#" class="media-link">
+                                    <i class="icon-link link-icon"></i>
+                                </a>
+                                <a href="#" class="media-link">
+                                    <i class="icon-search link-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-descr">
+                            <span class="card-title">Usus Legentis Videntur</span>
+                            <p class="card-info">Photography, Holiday</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="button">Load More</button>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <iframe class="video-media" src="https://www.youtube.com/embed/4JS70KB9GS0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="mobile">
+        <div class="container">
+            <div class="mobile-content">
+                <div class="media">
+                    <img class="media-content" src="img/i-phone-in-hand.jpg" alt="#">
+                </div>
+                <div class="mobile-text">
+                    <h3 class="title">Excellent for Mobile Devices.</h3>
+                    <span class="paragraph">
+                        Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                        aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii
+                        legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
+                        in futurum.
+                    </span>
+                    <div class="mobile-option">
+                        <details>
+                            <!--акардион-->
+                            <summary>
+                                <!--активный ткст-->
+                                <div class="mobile-option-section">
+                                    <i class="icon-round-arrow-right arrow-right-icon"></i>
+                                    <p class="paragraph">Nam liber tempor cum soluta nobis eleifend option;</p>
+                                </div>
+                            </summary>
+                            <!--текст за summary который всплывает-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus nemo asperiores
+                                magni alias maxime non quod quo ut quia, perspiciatis quae exercitationem, aliquid iusto
+                                ea. Atque voluptatum enim impedit.</p>
+                        </details>
+                        <details>
+                            <!--акардион-->
+                            <summary>
+                                <!--активный ткст-->
+                                <div class="mobile-option-section">
+                                    <i class="icon-round-arrow-right arrow-right-icon"></i>
+                                    <p class="paragraph">Option congue nihil imperdiet doming id quod mazim placerat
+                                        facer;</p>
+                                </div>
+                            </summary>
+                            <!--текст за summary который всплывает-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus nemo asperiores
+                                magni alias maxime non quod quo ut quia, perspiciatis quae exercitationem, aliquid iusto
+                                ea. Atque voluptatum enim impedit.</p>
+                        </details>
+                        <details>
+                            <!--акардион-->
+                            <summary>
+                                <!--активный ткст-->
+                                <div class="mobile-option-section">
+                                    <i class="icon-round-arrow-right arrow-right-icon"></i>
+                                    <p class="paragraph">Eodem modo typi, qui nunc nobis videntur parum futurum;</p>
+                                </div>
+                            </summary>
+                            <!--текст за summary который всплывает-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus nemo asperiores
+                                magni alias maxime non quod quo ut quia, perspiciatis quae exercitationem, aliquid iusto
+                                ea. Atque voluptatum enim impedit.</p>
+                        </details>
+                        <details>
+                            <!--акардион-->
+                            <summary>
+                                <!--активный ткст-->
+                                <div class="mobile-option-section">
+                                    <i class="icon-round-arrow-right arrow-right-icon"></i>
+                                    <p class="paragraph">Investigationes demonstraverunt lectores</p>
+                                </div>
+                            </summary>
+                            <!--текст за summary который всплывает-->
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus nemo asperiores
+                                magni alias maxime non quod quo ut quia, perspiciatis quae exercitationem, aliquid iusto
+                                ea. Atque voluptatum enim impedit.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="counter">
+        <div class="container">
+            <div class="counter-content">
+                <div class="counter-compartment">
+                    <span class="icon-people counter-icon"></span>
+                    <h3 class="title">3587</h3>
+                    <p class="paragraph">Satisfied Clients</p>
+                </div>
+                <div class="counter-compartment">
+                    <span class="icon-coffee-cup counter-icon"></span>
+                    <h3 class="title">207</h3>
+                    <p class="paragraph">SCups of coffee</p>
+                </div>
+                <div class="counter-compartment">
+                    <span class="icon-chat counter-icon"></span>
+                    <h3 class="title">2500</h3>
+                    <p class="paragraph">Blog posts</p>
+                </div>
+                <div class="counter-compartment">
+                    <span class="icon-heart counter-icon"></span>
+                    <h3 class="title">873</h3>
+                    <p class="paragraph">Likes</p>
+                </div>
+                <div class="counter-compartment">
+                    <span class="icon-dish counter-icon"></span>
+                    <h3 class="title">900</h3>
+                    <p class="paragraph">We launched</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="post">
+        <div class="container">
+            <div class="post-content">
+                <div class="post-text">
+                    <h3 class="title">Recent Posts.</h3>
+                    <span class="paragraph">
+                        Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
+                        etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                    </span>
+                </div>
+                <div class="post-card" id="jsPostCard">
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-7.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-8.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-9.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-7.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-8.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="post-media">
+                        <div class="post-slaider">
+                            <img class="media-content" src="img/photo-9.jpg" alt="#">
+                            <div class="calendar">
+                                <span class="calendar-number">30</span>
+                                <span class="calendar-month">Sep.</span>
+                            </div>
+                        </div>
+                        <div class="post-description">
+                            <h3 class="title">Lorem ipsum dolor sit amet</h3>
+                            <span class="paragraph">
+                                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+                            </span>
+                        </div>
+                        <div class="read-more">
+                            <a class="read-more-link" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-banner">
+        <div class="container">
+            <div class="second-banner-content">
+                <a class="friends" href="#">
+                    <img class="friends-logo" src="img/logo111-01.png">
+                </a>
+                <a class="friends" href="#">
+                    <img class="friends-logo" src="img/logo111-02.png">
+                </a>
+                <a class="friends" href="#">
+                    <img class="friends-logo" src="img/logo111-03.png">
+                </a>
+                <a class="friends" href="#">
+                    <img class="friends-logo" src="img/logo111-04.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="article">
+        <div class="container">
+            <div class="article-content">
+                <div class="first-pillar">
+                    <div class="article-logo">
+                        <a href="#" class="logo">
+                            <img class="logo-img" src="img/snapchat.svg" alt="#">
+                            <span class="logo-text">Waxom</span>
+                        </a>
+                    </div>
+                    <div class="article-info">
+                        <p class="paragraph"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                            nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                            veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                    </div>
+                    <div class="read-more">
+                        <a class="read-more-link" href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="second-pillar">
+                    <h3 class="title">Recent Posts</h3>
+                    <div class="bookmark">
+                        <span class="bookmark-date"> September 08, 2015</span>
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="bookmark">
+                        <span class="bookmark-date"> September 08, 2015</span>
+                        <p class="paragraph">Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                    </div>
+                    <div class="bookmark">
+                        <span class="bookmark-date"> September 08, 2015</span>
+                        <p class="paragraph">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula
+                            quarta decima</p>
+                    </div>
+                </div>
+                <div class="third-pillar">
+                    <h3 class="title">Our Twitter</h3>
+                    <div class="bookmark">
+                        <p class="paragraph"><a href="#" class="twit">@waxom</a>Cum soluta nobis eleifend option congue
+                            nihil imperdiet doming</p>
+                        <span class="bookmark-date"> 3 mins ago</span>
+                    </div>
+                    <div class="bookmark">
+                        <p class="paragraph">Mirum est <a href="#" class="twit">#envato</a> notare quam littera gothica,
+                            quam nunc putamus parum anteposuerit litterarum</p>
+                        <span class="bookmark-date"> 5 hours ago</span>
+                    </div>
+                    <div class="bookmark">
+                        <p class="paragraph">Soluta nobis option <a href="#" class="twit-bit">bit.ly/1Hniso7</a></p>
+                        <span class="bookmark-date"> 20 days ago</span>
+                    </div>
+                </div>
+                <div class="fourth-pillar">
+                    <h3 class="title">Dribbble Widget</h3>
+                    <div class="pillar-img">
+                        <a class="pillar-img-link" href="#">
+                            <img class="art" src="img/01.jpg" alt="№">
+                        </a>
+                        <a class="pillar-img-link" href="#">
+                            <img class="art" src="img/02.jpg" alt="№">
+                        </a>
+                        <a class="pillar-img-link" href="#">
+                            <img class="art" src="img/03.jpg" alt="№">
+                        </a>
+                        <a class="pillar-img-link" href="#">
+                            <img class="art" src="img/04.jpg" alt="№">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <nav class="footer-nav-left">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a class="footer-link" href="#">Copyright © 2015 <span
+                                    class="footer-content-logo">Waxom</span></a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-link footer-link-hover" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-link footer-link-hover" href="#">FAQ</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-link footer-link-hover" href="#">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer-nav-right">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item">
+                            <a class="footer-link" href="#">Designed by <span
+                                    class="footer-content-logo">ThemeFire</span></a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a class="footer-link" href="#">Only on <span class="footer-content-logo">Envato
+                                    Market</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </body>
 </html>

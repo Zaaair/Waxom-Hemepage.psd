@@ -1,0 +1,23 @@
+body{
+    font-family: $mainFont;
+    font-size: $sectionText;
+}
+
+.container {  /* делает так что все элементы в нем распологаються ровно по середине */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+/* класс хиден для элемента который нужно спрятать но и не убрать с потока*/
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+
+}

@@ -1,0 +1,32 @@
+.read-more {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    margin: 30px 0;
+    font-size: 14px;
+    .article-content & {
+        left: 0;
+        bottom: 0;
+    }
+    .post-media & {
+        margin: 15px 0;
+    }
+
+}
+.read-more-link{
+    font-size: $smallHoverText;
+    font-family: $secondaryFont;
+    color: $hoverColor;
+    &::after {
+        content: "";
+        position: absolute;
+        border: 5px solid transparent; 
+        border-left: 8px solid #c7b299;
+        top: 5px;
+        left: 80px;
+    }
+    .article-content & {
+        color: #d1d1d1;
+    }
+
+}

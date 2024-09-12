@@ -1,0 +1,24 @@
+.sort-list {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+
+}
+.sort-item{
+    display: inline-block;
+    border: solid 1px #ebebeb;
+    border-radius: $border-radius;
+    margin: 0 5px;
+    &:hover{
+        background-color: $bigButton;
+    }
+}
+.sort-link{
+    color: $smallTextColor;
+    font-size: $smallHoverText;
+    padding: 8px 18px;
+    display: block;
+    &:hover{
+        color: $primaryColor;
+    }
+}

@@ -1,0 +1,50 @@
+.calendar {
+    position: absolute;
+    max-width: 50px;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+.calendar-number {
+    min-width: 50px; 
+    height: 35px; 
+    background-color: #363636; 
+    padding-left: 0 5px; 
+    color: $mainTextColor; 
+    display: inline-block; 
+    line-height: 35px; 
+    text-transform: uppercase; 
+    text-align: center; 
+    font-family: $secondaryFont;
+    font-size: 24px;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    .post-media:hover & {
+        background-color: $hoverColor;
+        color: $primaryColor;
+
+    }
+}
+.calendar-month {
+    min-width: 50px; 
+    height: 25px; 
+    background-color: #252525; 
+    padding-left: 0 5px; 
+    color: $mainTextColor; 
+    display: inline-block; 
+    line-height: 25px; 
+    text-align: center; 
+    font-family: $secondaryFont;
+    font-size: 12px;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    .post-media:hover & {
+        color: $primaryColor;
+        background-color: #a48d72;
+
+    }
+
+
+}
